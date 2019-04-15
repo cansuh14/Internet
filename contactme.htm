@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css">
+
+	<title>Contact Me</title>
+</head>
+<body>
+<!---Navigation--->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="laptop.png" height="100" width="100"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span></button>
+    	
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+    	<li class="nav-item">
+    		<a class="nav-link" href="index.htm">HOME</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="films.htm">FILMS</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="books.htm">BOOKS</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="musics.htm">MUSICS</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="usefullinks.htm">USEFUL LINKS
+    		</a>
+    	</li>
+    	<li class="nav-item active">
+    		<a class="nav-link" href="contactme.htm">CONTACT ME</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="register.htm">REGISTER</a>
+    	</li>
+    </ul>
+ </div>
+</div>
+</nav>
+
+
+  <!-- PAGE CONTENT -->
+  <main role="main" class="container">
+
+    <!-- Page Header -->
+    <div class="text-center mb-4">
+      <h1 class="display-4">Contact Me</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-7">
+
+        <!-- Form Section -->
+        <div class="container">
+          <form action="" onsubmit="alert('Message sent.')">
+            <div class="row form-group">
+              <div class="col-4">
+                <label for="fullname">Name & Surname</label>
+              </div>
+              <div class="col">
+                <input type="text" id="fullname" class="form-control" name="fullname" required>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-4">
+                <label for="email">E-Mail</label>
+              </div>
+              <div class="col">
+                <input type="email" id="email" class="form-control" name="email" required>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-4">
+                <label for="telephone">Telephone</label>
+              </div>
+              <div class="col">
+                <input type="text" id="telephone" class="form-control" name="telephone" pattern="\d+" maxlength="11" placeholder="Max. 11 digits are allowed" required>
+              </div>
+            </div>
+
+            <div class="row form-group mb-4">
+              <div class="col-4">
+                <label for="issue">Issue</label>
+              </div>
+              <div class="col">
+                <input type="text" id="issue" class="form-control" name="issue" required>
+              </div>
+            </div>
+
+            <div class="row form-group mb-4">
+              <div class="col-4">
+                <label for="message">Message</label>
+              </div>
+              <div class="col">
+                <textarea id="message" class="form-control" name="message" maxlength="1000" required></textarea>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col text-right">
+                <button type="submit" class="btn btn-primary" value="Send">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+<br><br>
+      <!-- Contact Info Section -->
+      <div class="col-md">
+        <div class="container">
+          <div class="row">
+
+          
+
+            <div class="col-md">
+              <p class="text-center mb-5">
+                My e-mail address is<br>
+                <a class="text-monospace" href="mailto:cansu1461@icloud.com">cansu1461@icloud.com</a>
+              </p>
+
+
+              <p class="lead text-center">My social media accounts:</p>
+              <p class="text-center">
+                <a href="https://www.facebook.com/profile.php?id=100004292955430" class="media-link " target="_blank">
+                  <img src="facebook.png" height="48" alt="Facebook" title="My Facebook Profile">
+                </a>
+                <a href="https://www.instagram.com/cansuhaciahmetoglu/" class="media-link" target="_blank">
+                  <img src="Instagram-Icon.png" height="48" alt="Instagram" title="My Instagram Profile">
+                </a>
+                <a href="https://twitter.com/cansuh_14" class="media-link" target="_blank">
+                  <img src="twitter-old.png" height="48" alt="Twitter"
+                    title="My Twitter Account">
+                </a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

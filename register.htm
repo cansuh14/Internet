@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css">
+
+	<title>Registration</title>
+</head>
+<body>
+<!---Navigation--->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="laptop.png" height="100" width="100"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span></button>
+    	
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+    	<li class="nav-item">
+    		<a class="nav-link" href="index.htm">HOME</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="films.htm">FILMS</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="books.htm">BOOKS</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="musics.htm">MUSICS</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="usefullinks.htm">USEFUL LINKS
+    		</a>
+    	</li>
+    	<li class="nav-item">
+    		<a class="nav-link" href="contactme.htm">CONTACT ME</a>
+    	</li>
+    	<li class="nav-item active">
+    		<a class="nav-link" href="register.htm">REGISTER</a>
+    	</li>
+    </ul>
+ </div>
+</div>
+</nav>
+
+
+  <main role="main" class="container">
+
+    <!-- Page Header -->
+    <div class="text-center mb-4">
+      <h1 class="display-4">Registration Form</h1><br><br>
+    </div>
+
+    <!-- Form Section -->
+    <form action="registration.htm" onsubmit="alert('Thanks for registration!')">
+    <div class="row form-group">
+      <div class="col-4">
+        <label for="fullname">Name & Surname</label>
+      </div>
+      <div class="col">
+        <input type="text" id="fullname" class="form-control" name="fullname" size="24" required>
+      </div>
+    </div>
+
+    <div class="row form-group">
+      <div class="col-4">
+        <label for="email">E-Mail</label>
+      </div>
+      <div class="col">
+        <input type="email" id="email" class="form-control" name="email" required>
+      </div>
+    </div>
+
+    <div class="row form-group">
+      <div class="col-4">
+        <label for="password">Password</label>
+      </div>
+      <div class="col">
+        <input type="password" id="password" class="form-control" name="password" size="24" required>
+      </div>
+    </div>
+
+    <div class="row form-group mb-4">
+      <div class="col-4">
+        <label for="birthdate">Date of Birth</label>
+      </div>
+      <div class="col">
+        <input type="date" id="birthdate" class="form-control" name="birthdate" required>
+      </div>
+    </div>
+
+    <div class="row form-group mb-4">
+      <div class="col-4">
+        <label for="gender">Gender</label>
+      </div>
+      <div class="col">
+        <select id="gender" class="form-control" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="gay">I don't want to specify.</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row form-group mb-4">
+      <div class="col-4">
+        <label for="aboutme">About Yourself</label>
+      </div>
+      <div class="col">
+        <textarea id="aboutme" class="form-control" name="aboutme" maxlength="1000" required></textarea>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-4">
+        <label for="ppic">Upload your photo</label>
+      </div>
+      <div class="col">
+        <div class="custom-file">
+          <input type="file" class="form-control-file" id="ppic" name="ppic" accept="image/*">
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-4">
+        <label>Mark your interests</label>
+      </div>
+      <div class="col">
+        <div class="container"><div class="row">
+            <div class="col-6 col-md">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="cb-theatre">
+                <label class="form-check-label" for="cb-art">Theatre</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="cb-technology">
+                <label class="form-check-label" for="cb-science">Science</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="cb-tech">
+                <label class="form-check-label" for="cb-technology">Technology</label>
+              </div>
+      
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="cb-games">
+                <label class="form-check-label" for="cb-games">Games</label>
+              </div>
+            </div>
+
+            <div class="col-6 col-md">
+              <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="cb-music">
+                  <label class="form-check-label" for="cb-music">Music</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="cb-Tvseries">
+                  <label class="form-check-label" for="cb-animals">Tv-Series</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="cb-fashion">
+                  <label class="form-check-label" for="cb-fashion">Fashion</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="cb-football">
+                  <label class="form-check-label" for="cb-economy">Football</label>
+                </div>
+            </div>
+
+            <div class="col-md">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="cb-basketball">
+                <label class="form-check-label" for="cb-sports">Basketball</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="cb-voleyball">
+                <label class="form-check-label" for="cb-politics">Voleyball</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="cb-handball">
+                <label class="form-check-label" for="cb-politics">Handball</label>
+              </div>
+            </div>
+          </div></div>
+      </div>
+    </div>
+
+    <div class="row form-group">
+      <div class="col text-right">
+        <button type="reset" class="btn btn-secondary mr-3">Reset</button>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+    </form>
+  </main>
+
+</body>
+</html>
